@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection);
 
-        Debug.Log($"Shooting from {rayOrigin}");
+        // Debug.Log($"Shooting from {rayOrigin}");
         if (hit.collider != null)
         {
             // Debug.Log($"Hit: {hit.collider.name}");

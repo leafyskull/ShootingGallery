@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class Target : MonoBehaviour
@@ -7,6 +8,7 @@ public class Target : MonoBehaviour
     public void Hit()
     {
         Debug.Log($"Target hit! +{scoreValue} points!");
+        GameManager.Instance.AddToScore(scoreValue);
         Destroy(gameObject);
     }
 
